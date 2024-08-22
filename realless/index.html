@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/02195975-a97c-4d2d-a642-c1bf079e0de6%2F20787343-e014-4c0b-90ad-2d75a364dff3.image.png?v=1625040287840" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Realless</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://realless.glitch.me/" />
+    <meta
+      name="description"
+      content="This site changes design and makes you feel weird each time you blink."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Realless" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://realless.glitch.me/" />
+    <meta
+      property="og:description"
+      content="This site changes design and makes you feel weird each time you blink."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/02195975-a97c-4d2d-a642-c1bf079e0de6%2Freallesscard.png?v=1626154910606"
+    />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1200" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@monolesan" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.6.0/dist/tf.js"></script> -->
+     <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script> -->
+    
+    <!-- <script src="https://unpkg.com/@tensorflow/tfjs-core@2.4.0/dist/tf-core.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs-converter@2.4.0/dist/tf-converter.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.4.0/dist/tf-backend-webgl.js"></script>
+    <script src="https://unpkg.com/@tensorflow-models/face-landmarks-detection@0.0.3/dist/face-landmarks-detection.js"></script> -->
+    <!-- Import the webpage's javascript file -->
+    <script src="./libraries/tf-core.js" defer></script>
+    <script src="./libraries/tf-converter.js" defer></script>
+    <script src="./libraries/tf-backend-webgl.js" defer></script>
+    <script src="./libraries/face-landmarks-detection.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="blur">
+      <video class="changer" id="logo" muted><source src="./content/eye_logo_video.mp4"></video>
+    </div>
+    <div class="column">
+      <div class="doubleclass">
+        <h1 class="blur" >Использование искусственного интеллекта в искусстве</h1>
+        <div class="line blur"></div>
+        <p class="sub blur">Материал из realless.glitch.me</p>
+
+        <div class="double">
+          <div>
+            <p id="about"><span id="aboutTitle"><b>О проекте</b></span><br>
+              Вещи не всегда такие, какими кажутся. Закройте и откройте глаза. Что-нибудь изменилось?
+              Каждый раз, когда вы моргаете, незначительная часть контента меняется.
+              <button id="turnon">
+              начать
+              </button>
+              <button id="restart">
+              Начать сначала
+              </button>
+              <br>
+              <span id="status"></span>
+            </p>
+            <p class="content addorremove blur">Использование искусственного интеллекта в искусстве представляет собой феномен, в котором современные компьютерные технологии и алгоритмы машинного обучения применяются для творческого процесса, анализа и интерпретации художественных произведений. Это влияет на различные сферы искусства, включая изобразительное искусство, музыку, литературу, а также создание интерактивных и персонализированных произведений искусства.</p>
+            <ol class="blur">
+              <span><b>Содержание</b></span>
+              <li><a href="#C1">История и Развитие</a></li>
+              <li><a href="#C2">Генерация Изображений</a></li>
+              <li><a href="#C3">Генерация Видео</a></li>
+              <li><a href="#C4">Интерактивное Искусство</a></li>
+              <li><a href="#C5">Музыкальное Творчество</a></li>
+              <li><a href="#C6">Литературное Творчество</a></li>
+              <li><a href="#C7">Персонализация Искусства</a></li>
+              <li class="table_switch_invisible"><a href="#C8">Будущее Искусственного Интеллекта в Искусстве</a></li>
+            </ol>
+          <div class="images_toshow">
+            <table class="image_container">
+             <tr><td colspan="2" align="center"><img src="./content/IMG_1801.png"/></td></tr>
+             <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[1]</td></tr>
+            </table>
+          <table class="image_container">
+            <tr><td colspan="2" align="center"><img src="./content/pryaza(0)_000401.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[2]</td></tr>
+          </table>
+          <table class="image_container">
+            <tr><td colspan="2" align="center"><img src="./content/detailed_digital_painting_of_a_branch_rose_tree_texture.jpg"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[3]</td></tr>
+          </table>
+          <table class="image_container">
+            <tr><td colspan="2" align="center"><img src="./content/img_ghost_people.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[4]</td></tr>
+          </table>
+           <table class="image_container">
+            <tr><td colspan="2" align="center"><video muted autoplay loop><source src="./content/video_1.mp4"></video></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное видео [3]</td></tr>
+          </table>
+          </div>
+          </div>
+          <div id="about_table" class="blur">
+            <table>
+              <tr><th class="mark changer" colspan="2">“ИИИвИ”</th></tr>
+              <tr><td colspan="2" align="center"><img class="image_container" src="./content/monolesan_photo.png"/></td></tr>
+              <tr><td class="sub" style="text-align: center;" colspan="2">Фотография создателя в 2023</td></tr>
+              <tr>
+                <th scope="row">Статья написана</th>
+                <td>ИИ</td>
+              </tr>   
+              <tr>
+                <th scope="row">Дата выхода  v1.0.0</th>
+                <td>2021</td>
+              </tr>
+              <tr>
+                <th scope="row">Дата выхода  v2.0.0</th>
+                <td>2024</td>
+              </tr>
+              <tr>
+                <th scope="row">Создатель</th>
+                <td><img src="./content/logo.png"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="doubleclass blur">
+        <div class="chapter_container">
+          <h2 id="C1">История и Развитие</h2>
+          <div class="line"></div>
+          <table class="image_container images_tohide" style="float:right;">
+            <tr><td colspan="2" align="center"><img src="./content/img_history_2.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Создание искусственного интеллекта</td></tr>
+          </table>
+          <p class="content">Искусственный интеллект в искусстве начал активно развиваться в последние десятилетия, параллельно с распространением компьютерных технологий и развитием алгоритмов машинного обучения. Первые эксперименты с использованием ИИ в искусстве были связаны с генерацией изображений и музыки. Эти пионерские исследования дали толчок для более глубокого понимания возможностей, которые предоставляют компьютерные алгоритмы в креативном процессе.</p>
+          <p class="content">Однако с течением времени область применения искусственного интеллекта в искусстве стала гораздо шире и разнообразнее. Новые технологии и методы анализа данных позволили исследователям и художникам применять ИИ в различных сферах искусства. Литературное творчество, интерактивное искусство, визуальные эффекты в кино и многие другие аспекты искусства стали объектом внимания исследователей и творцов.</p>
+        </div>
+        <div class="chapter_container">
+          <h2 id="C2">Генерация изображений</h2>
+          <div class="line"></div>
+          <table class="image_container images_tohide" style="float:right;">
+            <tr><td colspan="2" align="center"><img src="./content/seed1999.png"></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">緑の4角_seed1999.png</td></tr>
+          </table>
+          <p class="content">В современном мире генерация изображений с использованием искусственного интеллекта стала одним из наиболее захватывающих исследовательских направлений. Два из наиболее популярных метода в этой области - Stable Diffusion и генеративно-состязательные сети (GAN) - представляют собой мощные инструменты для создания удивительно реалистичных и непредсказуемых изображений.</p>
+          <table class="image_container images_tohide" style="float:left;">
+            <tr><td colspan="2" align="center"><img src="./content/IMG_1801.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[1]</td></tr>
+          </table>
+          <p class="content">
+            <b>Stable Diffusion</b> - это относительно новый подход к генерации изображений, основанный на идее диффузии контента через широкий диапазон времени. Этот метод использует технику обучения под названием "диффузия с конечным временем", которая моделирует эволюцию пикселей изображения со временем. Он применяется в сочетании с глубокими нейронными сетями, чтобы генерировать изображения с высоким разрешением и высоким качеством.
+          </p>
+          
+          <p class="content"><b>Генеративно-состязательные сети (GAN)</b> - это другой популярный метод генерации изображений, который состоит из двух основных компонентов: генератора и дискриминатора. Генератор создает изображения, а дискриминатор пытается различить между реальными и сгенерированными изображениями. Эти две сети соревнуются друг с другом в процессе обучения, что позволяет генератору создавать все более реалистичные изображения.</p>
+        <table class="image_container images_tohide" style="float:right;">
+            <tr><td colspan="2" align="center"><img src="./content/pryaza(0)_000401.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[4]</td></tr>
+          </table>
+          <table class="image_container images_tohide" style="float:right;">
+            <tr><td colspan="2" align="center"><img src="./content/detailed_digital_painting_of_a_branch_rose_tree_texture.jpg"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[3]</td></tr>
+          </table>
+          <table class="image_container images_tohide" style="float:left;">
+            <tr><td colspan="2" align="center"><img src="./content/img_ghost_people.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное изображение[2]</td></tr>
+          </table>
+        </div>
+        
+        <div class="chapter_container">
+          <h2 id="C3">Генерация видео</h2>
+          <div class="line"></div>
+          <table class="image_container images_tohide" style="float:right;">
+            <tr><td colspan="2" align="center"><video muted autoplay loop><source src="./content/video_1.mp4"></video></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное видео [3]</td></tr>
+          </table>
+          <p class="content">Генерация видео с использованием искусственного интеллекта находит применение в различных областях искусства. От создания анимационных фильмов до генерации художественных произведений, эти методы помогают художникам и дизайнерам воплощать свои творческие идеи в жизнь. </p>
+          <p class="content">
+           Генерация видео с использованием искусственного интеллекта представляет собой процесс создания видео материалов с помощью алгоритмов машинного обучения. Основными методами генерации видео являются использование глубоких нейронных сетей, генеративно-состязательных сетей (GAN) и алгоритмического искусства. 
+          </p>
+          <table class="image_container images_tohide" style="float:left;">
+            <tr><td colspan="2" align="center"><video muted autoplay loop><source src="./content/0522_4.mp4"></video></td></tr>
+              <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное видео [1]</td></tr>
+           </table>
+          <table class="image_container images_tohide" style="float:left;">
+            <tr><td colspan="2" align="center"><video muted autoplay loop><source src="./content/thecreationofthedigitalforest_small_2.mp4"></video></td></tr>
+              <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное видео [2]</td></tr>
+           </table>
+           <div class="images_toshow">
+              <table class="image_container">
+                <tr><td colspan="2" align="center"><video muted autoplay loop><source src="./content/0522_4.mp4"></video></td></tr>
+                  <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное видео [1]</td></tr>
+               </table>
+              <table class="image_container">
+                <tr><td colspan="2" align="center"><video muted autoplay loop><source src="./content/thecreationofthedigitalforest_small_2.mp4"></video></td></tr>
+                  <tr><td class="sub" style="text-align: center;" colspan="2">Сгенерированное видео [2]</td></tr>
+               </table>
+               <table class="image_container" style="float:right;">
+            <tr><td colspan="2" align="center"><img style="max-width: 320px;" src="./content/princess_parts4.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Произведение, созданное с помощью <br>алгоритма машинного обучения</td></tr>
+          </table>
+          </div>
+        </div>
+        
+        </div>
+        <div class="doubleclass blur">
+
+        <div class="chapter_container">
+          <h2 id="C4">Интерактивное искусство</h2>
+          <div class="line"></div>
+          <table class="image_container images_tohide" style="float:right;">
+            <tr><td colspan="2" align="center"><img style="max-width: 320px;" src="./content/princess_parts4.png"/></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Произведение, созданное с помощью <br>алгоритма машинного обучения</td></tr>
+          </table>
+          <p class="content">Интерактивное искусство, которое взаимодействует с зрителями или слушателями, также находит вдохновение в искусственном интеллекте. Алгоритмы машинного обучения могут анализировать реакции зрителей и адаптироваться к ним, создавая уникальные и непредсказуемые опыты искусства.</p>
+          <p class="content">
+           Примером такого интерактивного искусства может служить инсталляция, которая реагирует на движения и жесты зрителей, изменяя свой вид или звуковое сопровождение в реальном времени. Алгоритмы могут анализировать движения зрителей и создавать уникальные визуальные или звуковые эффекты, которые соответствуют их действиям.  
+          </p>
+          <p class="content">
+            Другим примером может быть интерактивное искусство, основанное на обработке естественного языка (Natural Language Processing, NLP). Алгоритмы могут анализировать комментарии зрителей или слушателей и создавать опыты искусства, которые отражают содержание и эмоциональную окраску их слов.
+          </p>
+        </div>
+        
+        <div class="chapter_container">
+          <h2 id="C5">Музыкальное творчество</h2>
+          <div class="line"></div>
+          <p class="content">ИИ применяется в создании музыки. Алгоритмы могут анализировать музыкальные данные и создавать новые мелодии, ритмы и гармонии. Это открывает новые возможности для музыкантов и композиторов, позволяя им экспериментировать с новыми звуками и музыкальными стилями.</p>
+          <p class="content">Примеры сгенерированных мелодий:</p>
+          <audio controls>
+            <source src="./content/sound_ai_1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+           <audio controls>
+            <source src="./content/sound_ai_strange.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        </div>
+        
+        <div class="chapter_container">
+          <h2 id="C6">Литературное Творчество</h2>
+          <div class="line"></div>
+          <p class="content">ИИ используется для генерации текстов, включая стихи, рассказы и даже романы. Алгоритмы могут анализировать большие объемы текстов и создавать новые произведения, которые могут быть как оригинальными, так и вдохновленными классическими произведениями литературы.</p>
+          <p class="content">Пример сгенерированного стихотворения:</p>   
+          <ol class="blur">
+              <p>Луна восходит, озаряя путь,</p>
+              <p>Где звезды танцуют, вечный свет их дарит.</p>
+            <p>Дыхание ветра, в листве тайной шепчет,</p>
+            <p>И душа восхищается, красотой умирает.</p>
+          </ol>
+          <p class="content">Пример сгенерированного отрывка прозы:</p>   
+          <ol class="blur">
+              <p>“Поезд медленно скользил по рельсам, окутанный серым туманом осеннего утра. Вагоны медленно качались, и сквозь окна проникали тусклые лучи рассвета, словно пытаясь пробудить спящую природу за окном. В купе царила тишина, прерываемая лишь шумом колес, ритмично барабанящих по рельсам. На полках лежали заснеженные города и терпкий запах леса, проникающий сквозь закрытые окна.”</p>
+          </ol>
+        </div>
+        
+        <div class="chapter_container">
+          <h2 id="C7">Персонализация Искусства</h2>
+          <div class="line"></div>
+          <p class="content">Благодаря искусственному интеллекту и анализу данных искусство становится более персонализированным для каждого зрителя или слушателя. Алгоритмы могут адаптировать контент под предпочтения конкретного человека, делая его взаимодействие с искусством более интимным и значимым. Это позволяет искусству стать более проникновенным и вдохновляющим для каждого отдельного человека.</p>
+        </div>
+        
+        <div class="chapter_container table_switch_invisible">
+          <h2 id="C8">Будущее Искусственного Интеллекта в Искусстве</h2>
+          <div class="line"></div>
+          <table class="image_container images_tohide" style="float:right;">
+            <tr><td colspan="2" align="center"><video muted autoplay loop><source src="https://cdn.glitch.com/02195975-a97c-4d2d-a642-c1bf079e0de6%2Fezgif.com-gif-maker%20(3).mp4?v=1625817428493"></video></td></tr>
+            <tr><td class="sub" style="text-align: center;" colspan="2">Synthesized podcast <a href="https://www.instagram.com/p/CQdn6HzIV5p/">[Link]</a></td></tr>
+          </table>
+          <p class="content">Однако, использование искусственного интеллекта в искусстве также вызывает некоторые вызовы. Одним из них является вопрос об авторстве и подлинности произведений, созданных с использованием алгоритмов машинного обучения. Как определить, что произведение искусства было создано именно художником, а не алгоритмом?</p>
+          <p class="content">
+           Кроме того, существует опасение, что использование искусственного интеллекта может привести к потере индивидуальности и оригинальности в искусстве. Если алгоритмы могут создавать произведения искусства, которые неотличимы от тех, что созданы людьми, то что делает искусство уникальным и ценным?
+          </p>
+          <p class="content">
+            Несмотря на эти вызовы, будущее искусственного интеллекта в искусстве обещает быть захватывающим и перспективным. Мы можем ожидать дальнейшего развития технологий машинного обучения и глубокого обучения, что приведет к появлению новых методов создания искусства.
+          </p>
+          <p class="content">
+            Кроме того, использование искусственного интеллекта может способствовать расширению границ творчества и вдохновлять художников на создание новых и уникальных произведений. Использование алгоритмов машинного обучения может помочь художникам в поиске новых идей и подходов к созданию искусства.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <div id="main">
+    <div class="container">
+      <div class="canvas-wrapper">
+        <canvas id="output"></canvas>
+        <video id="video" playsinline style="
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          visibility: hidden;
+          width: auto;
+          height: auto;
+          ">
+        </video>
+      </div>
+    </div>
+  </div>
+  <canvas id="video2"></canvas>
+  </body>
+</html>
